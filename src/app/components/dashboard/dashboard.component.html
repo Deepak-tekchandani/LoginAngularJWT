@@ -1,1 +1,9 @@
-<p>dashboard works!</p>
+<div class="bootstrap-wrapper">
+    <div class="contaoner text-center mt">
+        <h1>Welcome to Admin Panel</h1>
+        <h1 *ngIf="user">User is :{{user.name}}</h1>
+        <button (click)="getUsers()" mat-raised-button >Get Details</button>
+
+    </div>
+
+</div>

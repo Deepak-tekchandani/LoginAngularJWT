@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
         (response:any)=>{
           //token successful generate
           console.log(response.token);
-          alert("token created ")
+          //alert("token created ")
           this.loginService.loginUser(response.token)
           window.location.href="/dashboard"
         },
